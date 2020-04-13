@@ -8,11 +8,27 @@
 
 requested_toppings = ['mushrooms', 'extra cheese']
 
+# 检查顾客是否点了配料'mushroom'，如果点了，就打印一条确认消息
 if 'mushrooms' in requested_toppings:
     print("Adding mushrooms.")
+# 该处为一个简单的if语句，而不是elif或else语句，因此不管前一个测试是否通过，都将进行这个测试
 if 'pepperoni' in requested_toppings:
     print("Adding pepperoni.")
 if 'extra cheese' in requested_toppings:
+    print("Adding extra cheese.")
+
+print("\nFinished making your pizza!")
+
+# 转换成if-elif-else语句，代码将不能正确地运行，因为有一个测试通过，就会跳过剩余测试
+requested_toppings = ['mushrooms', 'extra cheese']
+
+# 检查顾客是否点了配料'mushroom'，如果点了，就打印一条确认消息
+if 'mushrooms' in requested_toppings:
+    print("Adding mushrooms.")
+# 该处为一个简单的if语句，而不是elif或else语句，因此不管前一个测试是否通过，都将进行这个测试
+elif 'pepperoni' in requested_toppings:
+    print("Adding pepperoni.")
+elif 'extra cheese' in requested_toppings:
     print("Adding extra cheese.")
 
 print("\nFinished making your pizza!")
