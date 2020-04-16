@@ -2,12 +2,12 @@
 class User():
     """模拟创建一个用户简介"""
 
-    def __init__(self, first_name, last_name, locatioan, age):
+    def __init__(self, first_name, last_name, location, age):
         self.first_name = first_name
         self.last_name = last_name
-        self.location = locatioan
+        self.location = location
         self.age = age
-        self.full_name = self.first_name + self.last_name
+        self.full_name = first_name + last_name
 
     def describe_user(self):
         print(self.full_name.title() + " comes from " + self.location)
